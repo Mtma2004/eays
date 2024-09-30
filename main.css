@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color: #e3460d;
+  --color1: #e38d0d;
+}
+body {
+  margin: 0;
+  background: radial-gradient(var(--color), var(--color1));
+  height: 100vh;
+  position: relative;
+}
+.contener {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .eye {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 50px;
+    box-shadow: inset 0 0 20px 6px var(--color);
+    position: relative;
+
+    overflow: hidden;
+  }
+  .eye .ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    border: 10px solid #023b06;
+  }
+}
